@@ -107,7 +107,7 @@ yom/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/yom.git
+git clone https://github.com/Firas-Shall/yom.git
 cd yom
 ```
 
@@ -166,8 +166,8 @@ Visit `http://localhost:5173` to explore the application!
 ## 👤 Author
 
 **Firas Elshall**  
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your Profile](https://linkedin.com/in/YOUR_USERNAME)
+- GitHub: [@Firas-Shall](https://github.com/Firas-Shall)
+- LinkedIn: [Firas Elshall](https://linkedin.com)
 
 ---
 
