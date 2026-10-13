@@ -1,0 +1,48 @@
+.form-control {
+  margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+  display: block;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #BFDBF7
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  font: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #a5d8ff;
+  box-shadow: 0 0 10px rgba(165, 216, 255, 0.3);
+}
+
+.form-control--invalid label,
+.form-control--invalid p {
+  color: #ff8787;
+}
+
+.form-control--invalid input,
+.form-control--invalid textarea {
+  border-color: #ff8787;
+  background: rgba(255, 135, 135, 0.1);
+}
