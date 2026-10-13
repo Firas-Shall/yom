@@ -11,10 +11,19 @@ const PORT = process.env.PORT || 5000
 
 const app = express()
 
+const allowedOrigins = ['http://localhost:5173'];
+if (process.env.CORS_ORIGIN) {
+    process.env.CORS_ORIGIN.split(',').forEach(origin => {
+        const trimmed = origin.trim().replace(/\/+$/, '');
+        if (trimmed && !allowedOrigins.includes(trimmed)) {
+            allowedOrigins.push(trimmed);
+        }
+    });
+}
+
 app.use(cors({
-    origin: process.env.CORS_ORIGIN
-        ? process.env.CORS_ORIGIN.split(',')
-        : ['http://localhost:5173']
+    origin: allowedOrigins,
+    credentials: true
 }))
 app.use(express.json())
 
